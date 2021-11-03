@@ -1,0 +1,46 @@
+package btc.com;
+
+public class Car {
+	private int Regno;
+	private String Brand;
+	  
+	public Car(int Regno,String Brand) {
+		this.Regno=Regno;
+		this.Brand=Brand;
+	}
+	public void setRegno(int Regno) {
+		this.Regno=Regno;
+	}
+	public void setBrand(String Brand) {
+		this.Brand=Brand;
+	}
+	public int getRegno() {
+		return Regno;
+	}
+	public String getBrand() {
+		return Brand;
+	}public void Start() {
+		System.out.println("Engine Started");
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+package btc.com;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Car c = new Car(466,"Audi");
+		c.Start();
+		System.out.println("Car Regno:"+c.getRegno());
+		System.out.println("Car Brand:"+c.getBrand());
+		
+
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------
